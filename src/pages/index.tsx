@@ -1,4 +1,4 @@
-import process from 'node:process';
+import process from 'process';
 import type { PageConfig } from 'next';
 import Link from 'next/link';
 import type { ReactNode } from 'react';

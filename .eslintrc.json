@@ -18,6 +18,7 @@
 		"neon/prettier"
 	],
 	"rules": {
-		"react/jsx-key": 0
+		"react/jsx-key": 0,
+		"unicorn/prefer-node-protocol": 0
 	}
 }
