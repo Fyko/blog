@@ -1,16 +1,26 @@
 import { stripIndent, stripIndents } from 'common-tags';
 import Link from 'next/link';
+import { Badge } from '../../../../client/components/badge';
 import { Highlighter } from '../../../../client/components/highlighter';
 import {Post} from '../../../Post';
 
 export class PluginHuskyInstall extends Post {
 	public name = 'Using Husky with Yarn 3';
+
 	public slug = 'plugin-install-husky';
+
 	public date = new Date('15 November 2022');
-	public hidden = true;
+
+	public hidden = false;
+
 	public keywords = ['husky', 'git', 'yarn', 'yarn 3', 'nodejs', 'typescript'];
+
 	public excerpt =
 		"How do you install Husky without a postinstall script?";
+
+	public badges = [
+		<Badge color='teal' title='new' />
+	];
 
 	public render() {
 		return (
@@ -36,7 +46,7 @@ export class PluginHuskyInstall extends Post {
 				</Highlighter>
 
 				<p>
-					However, Yarn 3 does'nt seem to work with <code>postinstall</code> scripts. This means that you can't use Husky with Yarn 3 without some extra work.
+					However, Yarn 3 doesntt seem to work with <code>postinstall</code>. This means that you can't use Husky with Yarn 3 without some extra work.
 				</p>
 
 				<h2><code>plugin-install-husky</code></h2>
@@ -51,14 +61,14 @@ export class PluginHuskyInstall extends Post {
 				</p>
 
 				<p>
-					Yarn's 'provided' plugins go to <code>.yarn/plugins/@yarnpkg</code>, so create a scope-subfolder in <code>.yarn/plugins</code>, like <code>.yarn/plugins/@fykowo</code>.
+					Yarn's 'provided' plugins go to <code>.yarn/plugins/@yarnpkg</code>, so create a scoped-subfolder in <code>.yarn/plugins</code>, like <code>.yarn/plugins/@fykowo</code>.
 				</p>
 				
 				<p>
 					Now, create your plugin in that folder. I'll call mine <code>plugin-install-husky.cjs</code> (use <code>.cjs</code>).
 				</p>
 
-				<Highlighter id={'code'}>
+				<Highlighter id="code">
 					{stripIndent`
 						// Creative Commons (c) 2022 Spore, Inc. 
 						const { exec } = require('child_process');
@@ -83,7 +93,7 @@ export class PluginHuskyInstall extends Post {
 				<p>
 					Finally, register your plugin by adding a plugin definition to <code>.yarnrc.yml</code>: 
 				</p>
-				<Highlighter id={'yarnrc'} language={'yaml'}>
+				<Highlighter id="yarnrc" language="yaml">
 					{stripIndent`
 						plugins:
 							- path: .yarn/plugins/@fykowo/plugin-install-husky.cjs
@@ -94,7 +104,7 @@ export class PluginHuskyInstall extends Post {
 					Now, whenever you run <code>yarn</code>, Husky will be installed automatically.
 				</p>
 
-				<h3 id={'tldr'}>tl;dr</h3>
+				<h3 id="tldr">tl;dr</h3>
 				<ul>
 					<li>Create your plugin file in <code>.yarn/plugins/@yourscope/plugin-install-husky.cjs</code></li>
 					<li>{'>>'} the content of <a href='#code'>Code Block #1</a></li>
@@ -102,7 +112,7 @@ export class PluginHuskyInstall extends Post {
 				</ul>
 
 				<p>
-					Thanks to <a href='https://github.com/trufflehq' target='_blank'>Truffle</a> for letting me open-source this plugin!
+					Thanks to <a href='https://github.com/trufflehq' rel="noreferrer" target='_blank'>Truffle</a> for letting me open-source this plugin!
 				</p>
 			</>
 		);

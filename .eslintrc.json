@@ -4,6 +4,9 @@
 		"es2021": true,
 		"node": true
 	},
+	"parserOptions": {
+		"project": "./tsconfig.json"
+	},
 	"extends": [
 		"neon/common",
 		"neon/browser",
@@ -13,5 +16,8 @@
 		"neon/jsx-a11y",
 		"neon/next",
 		"neon/prettier"
-	]
+	],
+	"rules": {
+		"react/jsx-key": 0
+	}
 }

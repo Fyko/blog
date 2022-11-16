@@ -18,9 +18,9 @@ export default function PostPage({slug}: Props) {
 		<div className="space-y-4">
 			<Head>
 				<title>{post.name}</title>
-				<meta name="description" content={post.excerpt} />
-				<meta name="keywords" content={post.keywords.join(', ')} />
-				<meta name="theme-color" content={post.hidden ? '#ebb305' : '#171717'} />
+				<meta content={post.excerpt} name="description" />
+				<meta content={post.keywords.join(', ')} name="keywords" />
+				<meta content={post.hidden ? '#ebb305' : '#171717'} name="theme-color" />
 			</Head>
 
 			{post.hidden && (
@@ -31,6 +31,7 @@ export default function PostPage({slug}: Props) {
 
 			<div>
 				<Link href="/">
+					{/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
 					<a className="text-blue-500 dark:text-neutral-400 hover:text-blue-800 dark:hover:text-neutral-600">
 						../
 					</a>

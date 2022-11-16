@@ -1,8 +1,8 @@
 import 'tailwindcss/tailwind.css';
 import '../styles/main.css';
 
-import Head from 'next/head';
 import type {AppProps} from 'next/app';
+import Head from 'next/head';
 
 export default function App({Component, pageProps, router}: AppProps) {
 	return (
@@ -15,17 +15,17 @@ export default function App({Component, pageProps, router}: AppProps) {
 
 			<footer className="space-y-2">
 				<a
-					href="https://fyko.net"
 					className="underline decoration-blue-500/20 hover:decoration-blue-500/50 text-neutral-400 dark:text-neutral-700"
+					href="https://fyko.net"
 				>
 					Carter Himmel
 				</a>
-				<br></br>
+				<br />
 				<small
 				className="underline text-neutral-400 dark:text-neutral-700">
 					fork of <a
-					href="https://github.com/alii/blog"
 					className="underline decoration-blue-500/20 hover:decoration-blue-500/50"
+					href="https://github.com/alii/blog"
 				>
 					alii/blog
 				</a>
