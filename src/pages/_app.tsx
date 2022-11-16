@@ -3,6 +3,7 @@ import '../styles/main.css';
 
 import type {AppProps} from 'next/app';
 import Head from 'next/head';
+import Script from 'next/script';
 
 export default function App({Component, pageProps, router}: AppProps) {
 	return (
@@ -31,6 +32,17 @@ export default function App({Component, pageProps, router}: AppProps) {
 				</a>
 				</small>
 			</footer>
+
+			<Component {...pageProps} />
+			<Script src="https://scripts.simpleanalyticscdn.com/latest.js"  />
+			<noscript>
+				{/* eslint-disable @next/next/no-img-element */}
+				<img
+				alt=""
+				referrerPolicy="no-referrer-when-downgrade"
+				src="https://queue.simpleanalyticscdn.com/noscript.gif"
+				/>
+			</noscript>
 		</div>
 	);
 }
