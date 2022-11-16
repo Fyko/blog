@@ -1,0 +1,17 @@
+{
+	"env": {
+		"browser": true,
+		"es2021": true,
+		"node": true
+	},
+	"extends": [
+		"neon/common",
+		"neon/browser",
+		"neon/node",
+		"neon/typescript",
+		"neon/react",
+		"neon/jsx-a11y",
+		"neon/next",
+		"neon/prettier"
+	]
+}

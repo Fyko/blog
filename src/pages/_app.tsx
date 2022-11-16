@@ -8,18 +8,28 @@ export default function App({Component, pageProps, router}: AppProps) {
 	return (
 		<div className="px-4 md:px-16 space-y-24 py-24 max-w-4xl">
 			<Head>
-				<title>alistair smith • blog</title>
+				<title>carter himmel • blog</title>
 			</Head>
 
 			<Component {...pageProps} />
 
 			<footer className="space-y-2">
 				<a
-					href="https://alistair.sh"
+					href="https://fyko.net"
 					className="underline decoration-blue-500/20 hover:decoration-blue-500/50 text-neutral-400 dark:text-neutral-700"
 				>
-					Alistair Smith
+					Carter Himmel
 				</a>
+				<br></br>
+				<small
+				className="underline text-neutral-400 dark:text-neutral-700">
+					fork of <a
+					href="https://github.com/alii/blog"
+					className="underline decoration-blue-500/20 hover:decoration-blue-500/50"
+				>
+					alii/blog
+				</a>
+				</small>
 			</footer>
 		</div>
 	);

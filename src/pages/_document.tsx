@@ -7,6 +7,7 @@ export default class BlogDocument extends Document {
 				<Head>
 					<link rel="preconnect" href="https://fonts.googleapis.com" />
 					<link rel="preconnect" href="https://fonts.gstatic.com" />
+					<link rel="icon" type="image/png" href="https://avatars1.githubusercontent.com/u/45381083" />
 					<link
 						href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;500&display=swap"
 						rel="stylesheet"
@@ -16,15 +17,6 @@ export default class BlogDocument extends Document {
 				<body>
 					<Main />
 					<NextScript />
-
-					<script async defer src="https://lab.alistair.cloud/latest.js" />
-					<noscript>
-						<img
-							src="https://lab.alistair.cloud/noscript.gif"
-							alt=""
-							referrerPolicy="no-referrer-when-downgrade"
-						/>
-					</noscript>
 				</body>
 			</Html>
 		);

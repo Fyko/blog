@@ -11,20 +11,11 @@ export const config: PageConfig = {
 export default function Home() {
 	return (
 		<main className="space-y-8">
-			<div>
-				<a
-					className="text-sm text-yellow-700 dark:text-yellow-500"
-					href="https://old.alistair.blog"
-				>
-					⚠️ looking for the old blog?
-				</a>
-			</div>
-
 			<h2>
-				<span>alistair.blog</span>{' '}
+				<span>blog.fyko.net</span>{' '}
 				<a
 					target="_blank"
-					href="https://github.com/alii/blog"
+					href="https://github.com/Fyko"
 					className="text-neutral-500 hover:text-blue-500"
 					rel="noreferrer"
 				>

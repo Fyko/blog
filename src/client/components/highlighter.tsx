@@ -6,13 +6,15 @@ type Style = Record<`hljs-${string}`, string>;
 
 export function Highlighter({
 	children,
+	id = '',
 	language = 'typescript',
 }: {
 	children: string;
+	id?: string;
 	language?: string;
 }) {
 	return (
-		<div className="no-pre-margin">
+		<div className="no-pre-margin" id={id}>
 			<div className="hidden dark:block">
 				<SyntaxHighlighter language={language} style={dark as Style}>
 					{children}
