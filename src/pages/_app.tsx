@@ -14,7 +14,7 @@ export default function App({Component, pageProps, router}: AppProps) {
 
 			<Component {...pageProps} />
 
-			<Script src="https://science.fyko.net/latest.js"  />
+			<script async defer src="https://science.fyko.net/latest.js"  />
 			<noscript>
 				{/* eslint-disable @next/next/no-img-element */}
 				<img
