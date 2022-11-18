@@ -14,13 +14,13 @@ export default function App({Component, pageProps, router}: AppProps) {
 
 			<Component {...pageProps} />
 
-			<Script src="https://scripts.simpleanalyticscdn.com/latest.js"  />
+			<Script src="https://science.fyko.net/latest.js"  />
 			<noscript>
 				{/* eslint-disable @next/next/no-img-element */}
 				<img
 					alt=""
 					referrerPolicy="no-referrer-when-downgrade"
-					src="https://queue.simpleanalyticscdn.com/noscript.gif"
+					src="https://science.fyko.net/noscript.gif"
 				/>
 			</noscript>
 
