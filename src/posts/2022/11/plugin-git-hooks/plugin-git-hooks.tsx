@@ -15,7 +15,7 @@ export class PluginGitHooks extends Post {
 	public keywords = ['husky', 'git', 'yarn', 'yarn 3', 'nodejs', 'typescript'];
 
 	public excerpt =
-		"Is there a better option that Husky with Yarn3?";
+		"Is there a better option than Husky with Yarn 3?";
 
 	public badges = [
 		<NewBadge />
