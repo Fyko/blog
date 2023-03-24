@@ -1,5 +1,6 @@
 import {stripIndent, stripIndents} from 'common-tags';
 import Link from 'next/link';
+import { HiddenBadge } from '../../../../client/components/badge';
 import {Highlighter} from '../../../../client/components/highlighter';
 import {Post} from '../../../Post';
 
@@ -16,7 +17,7 @@ export class CommandsLockJson extends Post {
 
 	public excerpt = 'How do you automatically update your Discord slash commands? Use a lockfile.';
 
-	public badges = [];
+	public badges = [<HiddenBadge />];
 
 	public render() {
 		return (

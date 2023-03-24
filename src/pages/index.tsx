@@ -34,7 +34,7 @@ export default function Home() {
 								</BlogLink>
 							))
 					: posts.map(post => (
-							<BlogLink badges={post.badges} hidden={post.hidden} href={`/${post.slug}`} key={post.slug}>
+							<BlogLink badges={post.badges} href={`/${post.slug}`} key={post.slug}>
 								{post.name}
 							</BlogLink>
 					  ))}
@@ -43,14 +43,9 @@ export default function Home() {
 	);
 }
 
-function BlogLink(props: { badges: ReactNode[] | undefined, children: ReactNode; hidden?: boolean, href: string; }) {
+function BlogLink(props: { badges: ReactNode[] | undefined, children: ReactNode; href: string; }) {
 	return (
 		<li>
-			{props.hidden && (
-				<span className="inline-flex items-center px-2.5 py-0.5 mx-2 rounded-full text-xs font-medium bg-yellow-500 text-yellow-900">
-					hidden
-				</span>
-			)}
 			{props.badges ? props.badges : null}
 			<Link href={props.href} passHref>
 				{/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}

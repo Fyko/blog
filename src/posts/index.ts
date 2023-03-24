@@ -1,7 +1,7 @@
 import { CommandsLockJson } from './2022/11/commands-lockfile/commands-lockfile';
-import { PluginHuskyInstall } from './2022/11/plugin-install-husky/plugin-install-husky';
+import { PluginGitHooks } from './2022/11/plugin-git-hooks/plugin-git-hooks';
 
 export const posts = [
-	new PluginHuskyInstall(),
+	new PluginGitHooks(),
 	new CommandsLockJson(),
 ] as const;
