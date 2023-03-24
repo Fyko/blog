@@ -21,6 +21,13 @@ export default function PostPage({slug}: Props) {
 				<meta content={post.excerpt} name="description" />
 				<meta content={post.keywords.join(', ')} name="keywords" />
 				<meta content={post.hidden ? '#ebb305' : '#171717'} name="theme-color" />
+				<meta content="summary" name="twitter:card" />
+				<meta content="@fykowo" name="twitter:site" />
+				<meta content="@fykowo" name="twitter:creator" />
+				<meta content={`/${post.slug}`} property="og:url" />
+				<meta content={post.name} property="og:title" />
+				<meta content={post.excerpt} property="og:description" />
+				<meta content="https://avatars1.githubusercontent.com/u/45381083" property="og:image" />
 			</Head>
 
 			{post.hidden && (
