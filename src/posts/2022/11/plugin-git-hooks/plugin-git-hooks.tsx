@@ -82,7 +82,7 @@ export class PluginGitHooks extends Post {
 					Introducing...
 				</p>
 
-				<h2>✨<code>plugin-git-hooks</code>✨</h2>
+				<h2>✨<code><a href="https://github.com/trufflehq/yarn-plugin-git-hooks" rel="noreferrer" target="_blank">plugin-git-hooks</a></code>✨</h2>
 
 				<p>
 					Lets eject Husky! Start by running <code>yarn remove husky</code> and delete the <code>postinstall</code> script from <code>package.json</code>.
