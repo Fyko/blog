@@ -1,5 +1,10 @@
 {
 	"compilerOptions": {
+		"baseUrl": ".",
+		"paths": {
+			"@/client/*": ["src/client/*"],
+			"@/Post": ["src/posts/Post.ts"],
+		},
 		"module": "commonjs",
 		"target": "es5",
 		"sourceMap": true,

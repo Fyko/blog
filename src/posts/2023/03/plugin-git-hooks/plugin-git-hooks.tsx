@@ -1,7 +1,7 @@
 import { stripIndent } from 'common-tags';
-import { NewBadge } from '../../../../client/components/badge';
-import { Highlighter } from '../../../../client/components/highlighter';
-import { Post } from '../../../Post';
+import { Post } from '@/Post';
+import { NewBadge } from '@/client/components/badge';
+import { Highlighter } from '@/client/components/highlighter';
 
 export class PluginGitHooks extends Post {
 	public name = 'Using Git Hooks with Yarn 3';
