@@ -66,7 +66,7 @@ export class Phished extends Post {
 				<p>
 					Being a regular in a large programming-focused Discord server, I knew about the "will you
 					try my game.exe" scam. But, this was someone I knew &mdash; someone who was on my
-					friendlist for some time. Plus, I was in a good mood and in a rush to go on my morning
+					friend list for some time. Plus, I was in a good mood and in a rush to go on my morning
 					run.
 				</p>
 
@@ -80,7 +80,7 @@ export class Phished extends Post {
 					<a href="https://virustotal.com" rel="noreferrer" target="_blank">
 						VirusTotal
 					</a>
-					. It retuned inconclusive. I opened Task Manager to inspect the process as it ran -- and
+					. It returned inconclusive. I opened Task Manager to inspect the process as it ran -- and
 					it didn't work the first time. I told them it didn't work, and they sent me another
 					executable, which I scanned again. Inconclusive. And, it didn't work again. I had given
 					them the benefit of the doubt at this point, and didn't scan the third executable.
@@ -143,7 +143,7 @@ export class Phished extends Post {
 				</p>
 
 				<p>
-					My anxity cranked to a 10. I was shaking while trying my damndest to:
+					My anxiety cranked to a 10. I was shaking while trying my damndest to:
 					<ul>
 						<li>freeze my cards</li>
 						<li>freeze my credit</li>
@@ -289,7 +289,7 @@ export class Phished extends Post {
 
 				<p>
 					The phisher left that one programming server I mentioned earlier, so I rejoined. The only
-					other thing he did was send phishy DMs to a bunch of people on my friendlist, who I
+					other thing he did was send phishy DMs to a bunch of people on my friend list, who I
 					informed that I was compromised.
 				</p>
 
@@ -297,7 +297,7 @@ export class Phished extends Post {
 
 				<h3>What I learned</h3>
 				<ul>
-					<li>I ought to use Privacy.com more</li>
+					<li>I ought to use Privacy.com more. It's a </li>
 					<li>
 						2fa for EVERYTHING. Luckily, I already do for most important things, but other sites are
 						catching up
@@ -308,11 +308,11 @@ export class Phished extends Post {
 
 				<h3>Other notes</h3>
 				<ul>
-					<li>keybase has been a great tool for me to verify my identity</li>
+					<li>Keybase has been a great tool for me to verify my identity</li>
 				</ul>
 
 				<p>
-					Frankly, I'm embarassed and ashamed that I fell for this. I'm a programmer &mdash; I
+					Frankly, I'm embarrassed and ashamed that I fell for this. I'm a programmer &mdash; I
 					should have known better, and I should have been more careful. Regardless, I learned a lot
 					from this experience, and I hope you did too.
 				</p>
