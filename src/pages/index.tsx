@@ -1,8 +1,7 @@
-import process from 'process';
-import type { PageConfig } from 'next';
+import type {PageConfig} from 'next';
 import Link from 'next/link';
-import type { ReactNode } from 'react';
-import { posts } from '../posts';
+import type {ReactNode} from 'react';
+import {posts} from '../posts';
 
 // Sweet zero js 🤑
 export const config: PageConfig = {
@@ -43,7 +42,7 @@ export default function Home() {
 	);
 }
 
-function BlogLink(props: { badges: ReactNode[] | undefined, children: ReactNode; href: string; }) {
+function BlogLink(props: {badges: ReactNode[] | undefined; children: ReactNode; href: string}) {
 	return (
 		<li>
 			{props.badges ? props.badges : null}

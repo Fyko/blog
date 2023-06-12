@@ -1,4 +1,4 @@
-import type { ReactNode } from "react";
+import type {ReactNode} from 'react';
 
 export abstract class Post {
 	public abstract readonly name: string;

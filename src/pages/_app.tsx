@@ -14,7 +14,7 @@ export default function App({Component, pageProps, router}: AppProps) {
 
 			<Component {...pageProps} />
 
-			<script async defer src="https://science.fyko.net/latest.js"  />
+			<script async defer src="https://science.fyko.net/latest.js" />
 			<noscript>
 				{/* eslint-disable @next/next/no-img-element */}
 				<img
@@ -32,14 +32,14 @@ export default function App({Component, pageProps, router}: AppProps) {
 					Carter Himmel
 				</a>
 				<br />
-				<small
-				className="underline text-neutral-400 dark:text-neutral-700">
-					fork of <a
-					className="underline decoration-blue-500/20 hover:decoration-blue-500/50"
-					href="https://github.com/alii/blog"
-				>
-					alii/blog
-				</a>
+				<small className="underline text-neutral-400 dark:text-neutral-700">
+					fork of{' '}
+					<a
+						className="underline decoration-blue-500/20 hover:decoration-blue-500/50"
+						href="https://github.com/alii/blog"
+					>
+						alii/blog
+					</a>
 				</small>
 			</footer>
 		</div>

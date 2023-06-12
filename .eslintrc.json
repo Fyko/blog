@@ -13,9 +13,10 @@
 		"neon/node",
 		"neon/typescript",
 		"neon/react",
-		"neon/jsx-a11y",
 		"neon/next",
-		"neon/prettier"
+		"neon/edge",
+		"neon/prettier",
+		"neon/jsx-a11y"
 	],
 	"rules": {
 		"react/jsx-key": 0,

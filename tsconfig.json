@@ -3,7 +3,7 @@
 		"baseUrl": ".",
 		"paths": {
 			"@/client/*": ["src/client/*"],
-			"@/Post": ["src/posts/Post.ts"],
+			"@/Post": ["src/posts/Post.ts"]
 		},
 		"module": "commonjs",
 		"target": "es5",

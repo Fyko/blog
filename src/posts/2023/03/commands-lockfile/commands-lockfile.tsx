@@ -1,7 +1,7 @@
-import { stripIndent } from 'common-tags';
-import { Post } from '@/Post';
-import { NewBadge } from '@/client/components/badge';
-import { Highlighter } from '@/client/components/highlighter';
+import {stripIndent} from 'common-tags';
+import {Post} from '@/Post';
+import {NewBadge} from '@/client/components/badge';
+import {Highlighter} from '@/client/components/highlighter';
 
 const workflow = `name: Continuous Deployment (commands)
 
